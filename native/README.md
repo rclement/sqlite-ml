@@ -12,13 +12,6 @@ cargo build
 
 export PYTHONPATH=$(python -c 'import site; print(site.getsitepackages()[0])')
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
-sqlite3
-> .load target/debug/libsqliteml
-> select python_version();
-> select python_run("import sys; print('\n'.join(sys.path))");
-> select pip_list();
-> select sklearn_version();
-
 sqlite3 test.db < test.sql
 ```
 
