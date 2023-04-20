@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sqlite-ml"
-version = "0.1.0"
+version = "0.1.1"
 description = "An SQLite extension for machine learning"
 authors = ["Romain Clement <contact@romain-clement.net>"]
 license = "Apache License, Version 2.0"
