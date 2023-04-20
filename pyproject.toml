@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "sqlite-ml"
+version = "0.0.0"
+description = ""
+authors = ["Romain Clement <contact@romain-clement.net>"]
+license = "Apache License, Version 2.0"
+readme = "README.md"
+packages = [{include = "sqlite_ml"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+scikit-learn = "*"
+pandas = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "==23.3.0"
+faker = "==18.4.0"
+flake8 = "==6.0.0"
+mypy = "==1.2.0"
+pytest = "==7.3.1"
+pytest-cov = "==4.0.0"
+sqlite-utils = "==3.30"
+
+[tool.mypy]
+show_error_codes = "True"
+pretty = "True"
+follow_imports = "silent"
+strict_optional = "True"
+warn_redundant_casts = "True"
+warn_unused_ignores = "True"
+disallow_any_generics = "True"
+check_untyped_defs = "True"
+no_implicit_reexport = "True"
+disallow_untyped_defs = "True"
+
+[[tool.mypy.overrides]]
+module = "pandas.*"
+ignore_missing_imports = "True"
+
+[[tool.mypy.overrides]]
+module = "sklearn.*"
+ignore_missing_imports = "True"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
