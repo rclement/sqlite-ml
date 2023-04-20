@@ -5,6 +5,11 @@
 Train machine learning models and run predictions directly from your SQLite database.
 Inspired by [PostgresML](https://postgresml.org).
 
+[![PyPI](https://img.shields.io/pypi/v/sqlite-ml.svg)](https://pypi.org/project/sqlite-ml/)
+[![CI/CD](https://github.com/rclement/sqlite-ml/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/rclement/sqlite-ml/actions/workflows/ci-cd.yml)
+[![Coverage Status](https://img.shields.io/codecov/c/github/rclement/sqlite-ml)](https://codecov.io/gh/rclement/sqlite-ml)
+[![License](https://img.shields.io/github/license/rclement/sqlite-ml)](https://github.com/rclement/sqlite-ml/blob/master/LICENSE)
+
 ## Why?
 
 Why bother running Machine Learning workloads in SQLite? Good question!
