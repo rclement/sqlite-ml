@@ -58,7 +58,7 @@ jobs:
         name: Configure pip caching
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-publish-pip-${{ hashFiles('**/setup.py') }}
+          key: ${{ runner.os }}-publish-pip-${{ hashFiles('**/pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-publish-pip-
       - name: Install dependencies
@@ -90,7 +90,7 @@ jobs:
         name: Configure pip caching
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-publish-pip-${{ hashFiles('**/setup.py') }}
+          key: ${{ runner.os }}-publish-pip-${{ hashFiles('**/pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-publish-pip-
       - name: Install dependencies
