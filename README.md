@@ -53,6 +53,8 @@ conn.execute("SELECT sqml_python_version();").fetchone()[0]
 We are working on making this extension a native SQLite extension,
 usable within any SQLite context, stay tuned!
 
+In any case, **the easiest way to get started with `sqlite-ml`** is to use the Datasette integration [`datasette-ml`](https://github.com/rclement/datasette-ml).
+
 ## Tutorial
 
 Using `sqlite-ml` you can start training Machine Learning models directly
@@ -297,6 +299,7 @@ pytest -v --cov=sqlite_ml --cov=tests --cov-branch --cov-report=term-missing tes
 All the things on the internet that has inspired this project:
 
 - [PostgresML](https://postgresml.org)
+- [MLFlow](https://mlflow.org)
 - [SQLite  Run-Time Loadable Extensions](https://www.sqlite.org/loadext.html)
 - [Alex Garcia's `sqlite-loadable-rs`](https://github.com/asg017/sqlite-loadable-rs)
 - [Alex Garcia's SQLite extensions](https://github.com/asg017)
