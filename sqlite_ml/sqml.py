@@ -265,7 +265,9 @@ class SQML:
         else:
             model_metrics["r2"] = metrics.r2_score(y_test, y_pred)
             model_metrics["mae"] = metrics.mean_absolute_error(y_test, y_pred)
-            model_metrics["rmse"] = metrics.mean_squared_error(y_test, y_pred, squared=False)
+            model_metrics["rmse"] = metrics.mean_squared_error(
+                y_test, y_pred, squared=False
+            )
 
         serialized_model = pickle.dumps(estimator)
 
