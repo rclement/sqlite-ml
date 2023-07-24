@@ -53,7 +53,10 @@ conn.execute("SELECT sqml_python_version();").fetchone()[0]
 We are working on making this extension a native SQLite extension,
 usable within any SQLite context, stay tuned!
 
-In any case, **the easiest way to get started with `sqlite-ml`** is to use the Datasette integration [`datasette-ml`](https://github.com/rclement/datasette-ml).
+In any case, **the easiest ways to get started with `sqlite-ml`** is to use either:
+
+- The Datasette plugin [`datasette-ml`](https://github.com/rclement/datasette-ml)
+- The SQLite-Utils plugin [`sqlite-utils-ml`](https://github.com/rclement/sqlite-utils-ml)
 
 ## Tutorial
 
