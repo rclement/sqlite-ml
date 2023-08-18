@@ -19,7 +19,7 @@ flake8 = "==6.1.0"
 mypy = "==1.5.1"
 pytest = "==7.4.0"
 pytest-cov = "==4.1.0"
-sqlite-utils = "==3.34"
+sqlite-utils = "==3.35"
 
 [tool.mypy]
 show_error_codes = "True"
