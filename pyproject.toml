@@ -13,7 +13,7 @@ scikit-learn = "*"
 pandas = "*"
 
 [tool.poetry.group.dev.dependencies]
-black = "==23.9.1"
+black = "==23.10.0"
 faker = "==19.11.0"
 flake8 = "==6.1.0"
 mypy = "==1.6.1"
