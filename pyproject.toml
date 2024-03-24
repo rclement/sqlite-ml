@@ -18,7 +18,7 @@ faker = "==19.13.0"
 flake8 = "==6.1.0"
 mypy = "==1.8.0"
 pytest = "==7.4.3"
-pytest-cov = "==4.1.0"
+pytest-cov = "==5.0.0"
 sqlite-utils = "==3.35.2"
 
 [tool.mypy]
