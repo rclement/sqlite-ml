@@ -669,14 +669,14 @@ test = ["pytest"]
 
 [[package]]
 name = "sqlite-utils"
-version = "3.35.2"
+version = "3.37"
 description = "CLI tool and Python library for manipulating SQLite databases"
 category = "dev"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "sqlite-utils-3.35.2.tar.gz", hash = "sha256:590b14ad277914cb3fc7d5e254764847facdaaa23c7bafd85ec93874f6f42143"},
-    {file = "sqlite_utils-3.35.2-py3-none-any.whl", hash = "sha256:afd7df2d248adb9a107695ad73a9abf39b1a4913a80e6915f696ca7420d42a16"},
+    {file = "sqlite_utils-3.37-py3-none-any.whl", hash = "sha256:4fb0dc9e61b1f9226a14eb1f072e984cf3cb69058dc2838887600a0771e9624f"},
+    {file = "sqlite_utils-3.37.tar.gz", hash = "sha256:542a71033d4e7936fe909230ac9794d3e200021838ab63dbaf3ce8f5bc2273a4"},
 ]
 
 [package.dependencies]
@@ -691,7 +691,7 @@ tabulate = "*"
 docs = ["beanbag-docutils (>=2.0)", "codespell", "furo", "pygments-csv-lexer", "sphinx-autobuild", "sphinx-copybutton"]
 flake8 = ["flake8"]
 mypy = ["data-science-types", "mypy", "types-click", "types-pluggy", "types-python-dateutil", "types-tabulate"]
-test = ["black", "cogapp", "hypothesis", "pytest"]
+test = ["black (>=24.1.1)", "cogapp", "hypothesis", "pytest"]
 tui = ["trogon"]
 
 [[package]]
@@ -760,4 +760,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8.1"
-content-hash = "5bb23b37a68d1897f7ff9c620a4fd8c2214dac752744aff53d6857d9757fac10"
+content-hash = "61a229ac80b41ceb62fd7241eb717a311f45cb6dfc6fa29e2731f5aaef8ae7f3"
